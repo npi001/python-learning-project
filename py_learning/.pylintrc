@@ -1,0 +1,73 @@
+[pylint]
+# Pylint配置文件
+
+[MESSAGES CONTROL]
+# 禁用某些检查
+disable = 
+    C0114,  # missing-module-docstring
+    C0115,  # missing-class-docstring
+    C0116,  # missing-function-docstring
+    R0903,  # too-few-public-methods
+    R0913,  # too-many-arguments
+    W0613,  # unused-argument
+    W0703,  # broad-except
+    C0103,  # invalid-name
+    R0914,  # too-many-locals
+
+# 启用的检查
+enable = 
+
+# 检查格式
+output-format = text
+reports = no
+score = no
+
+# Python版本
+py-version = 3.7
+
+[FORMAT]
+# 最大行长度
+max-line-length = 88
+
+# 使用单引号还是双引号
+string-quote = single
+
+[BASIC]
+# 变量命名规则
+variable-rgx = [a-z_][a-z0-9_]{0,30}$
+function-rgx = [a-z_][a-z0-9_]{0,30}$
+method-rgx = [a-z_][a-z0-9_]{0,30}$
+class-rgx = [A-Z_][a-zA-Z0-9]+$
+module-rgx = [a-z_][a-z0-9_]*$
+
+# 常量命名规则
+const-rgx = [A-Z_][A-Z0-9_]{0,30}$
+
+[DESIGN]
+# 最大公共方法数
+max-public-methods = 20
+
+# 最大属性数
+max-attributes = 7
+
+# 最大分支数
+max-branches = 12
+
+# 最大返回数
+max-returns = 6
+
+# 最大语句数
+max-statements = 50
+
+[SIMILARITIES]
+# 相似代码检查
+min-similarity-lines = 4
+ignore-comments = yes
+ignore-docstrings = yes
+ignore-imports = yes
+
+[VARIABLES]
+# 变量检查
+init-import = no
+dummy-variables-rgx = _+$|(_[a-zA-Z0-9_]*[a-zA-Z0-9]+?$)|dummy|^ignored_|^unused_
+additional-builtins =
