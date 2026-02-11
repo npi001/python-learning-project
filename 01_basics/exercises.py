@@ -27,15 +27,15 @@ def exercise_1_variables():
     print("3. 将年龄转换为字符串并与姓名连接")
     
     # 在这里写你的代码:
-    name = "张三"  # 替换为你的姓名
-    age = 25       # 替换为你的年龄
+    name = "小李"  # 替换为你的姓名
+    age = 60       # 替换为你的年龄
     height = 1.75  # 替换为你的身高
     is_programmer = True
     
     print(f"\n你的代码:")
     print(f"name = '{name}', type: {type(name)}")
     print(f"age = {age}, type: {type(age)}")
-    print(f"height = {height}, type: {type(height)}")
+    print(f"height = {height}, type: {type(height)}")1
     print(f"is_programmer = {is_programmer}, type: {type(is_programmer)}")
     
     age_str = str(age)
