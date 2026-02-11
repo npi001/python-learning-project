@@ -35,7 +35,7 @@ def exercise_1_variables():
     print(f"\n你的代码:")
     print(f"name = '{name}', type: {type(name)}")
     print(f"age = {age}, type: {type(age)}")
-    print(f"height = {height}, type: {type(height)}")1
+    print(f"height = {height}, type: {type(height)}")
     print(f"is_programmer = {is_programmer}, type: {type(is_programmer)}")
     
     age_str = str(age)
